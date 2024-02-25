@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bodymode {
+  background-color: black;
+}
+#heading {
+  text-align: center;
+}
+
+/* #modebtn{
+  margin-left: 90%;
+} */
+
+h1 {
+  margin-top: 2rem;
+  margin-left: 2px;
+}
+
+.headingdarkmode {
+  color: white;
+}
+
+#container {
+  /* background-color: black; */
+  display: flex;
+  margin-top: 2rem;
+  gap: 3%;
+}
+
+#allSongs {
+  height: 100vh;
+  width: 24rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.containercolor {
+  background-color: #48cae4;
+}
+#filterdiv {
+  display: flex;
+  height: 3rem;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-left: 20px;
+}
+
+#filterdiv select {
+  background-color: #457b9d;
+  height: 30px;
+  border-radius: 3px;
+}
+
+#filteredSong {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#filteredSong p {
+  background-color: #0077b6;
+  margin-bottom: 2px;
+  height: 3rem;
+  font-size: larger;
+  color: aliceblue;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  line-height: 3rem;
+}
+
+#songCard {
+  height: 100vh;
+  width: 35rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(87, 6, 87) inset;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#songImage {
+  background-color: #023e8a;
+  width: 25rem;
+  text-align: center;
+  margin-top: 4rem;
+  height: 25rem;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#songImage img {
+  width: 75%;
+  height: 50%;
+  object-fit: contain;
+  border-radius: 2%;
+}
+#songImage p {
+  font-size: 1.25rem;
+
+  text-align: start;
+
+  width: 75%;
+}
+#songdetail {
+  width: 75%;
+}
+#songdetail audio {
+  width: 90%;
+}
+
+#songdetail audio {
+  margin-top: 1rem;
+}
+
+.btns {
+  width: 60%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #023047;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  line-height: 2rem;
+  color: white;
+}
+
+#playList {
+  height: 91vh;
+  width: 24rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px rgb(87, 6, 87) inset;
+  text-align: center;
+}
+#playlistcreater {
+  text-align: start;
+}
+
+#myplaylists {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myplaylists p {
+  background-color: #0077b6;
+  margin-bottom: 2px;
+  height: 3rem;
+  font-size: larger;
+  color: aliceblue;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  line-height: 3rem;
+}
+#currplaylist {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#currplaylist p {
+  background-color: #0077b6;
+  margin-bottom: 2px;
+  height: 3rem;
+  font-size: larger;
+  color: aliceblue;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  line-height: 3rem;
+}
+
+h3 {
+  /* margin-left: 1rem; */
+  font-size: xx-large;
+}
+
+input {
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#playlistbtn {
+  padding: 0.75rem;
+  background-color: #023047;
+  color: white;
+}
+
+/* Mode button*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 90%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Dark mode*/
+
+.darkmodecontainer {
+  background-color: #1d3557;
+}
